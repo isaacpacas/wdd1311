@@ -2,6 +2,7 @@ body{
     font-family: "Roboto", sans-serif;
     background-color:beige;   
     margin: 0%; 
+    text-align: center;
 }
 
 header{
@@ -9,12 +10,17 @@ header{
 }
 
 header, footer {
-    max-width: 640px;
+    
     margin: 0;
     border: 1px solid #000;
     padding: 1rem;
     background-color: #483D8B;
     
+}
+
+footer{
+    text-align: left;
+    color: #fff;
 }
 
 h1 {
@@ -60,6 +66,7 @@ main{
   /* Styles for the navigation links */
   .nav-links {
     list-style: none;
+    
     text-align: center;
     gap: 1rem;
     margin: 0;
@@ -75,3 +82,33 @@ main{
   .nav-links li a:hover {
     color: #007BFF; /* Add a hover color */
   }
+
+  /*0000000000000000000000000*/
+  @media screen and (min-width: 700px) {
+    .gallery {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-links{
+        display: none;
+    }
+  }
+
+    /*0000000000000000000000000*/
+
+    @media screen and (min-width: 1000px) {
+        .gallery {
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .menu-button{
+            display: none;
+        }
+       .nav-links{
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+       }        
+      }
